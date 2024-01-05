@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color:pink;
+}
+
+#main{
+    height: 90%;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 2px 2px 23px 20px rgb(238, 144, 160);
+    border-radius: 10%;
+}
+
+h2{
+    font-size: 40px;
+    margin-left: 20%;
+    margin-top: 3%;
+    color:blue;
+    margin-bottom: 3%;
+}
+
+#header{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(223, 20, 9);
+    margin-left: 15%;
+}
+
+#input{
+    height: 30%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+
+#label{
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 29%;
+}
+
+#inputfield{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 29%;
+    height: 15%;
+    width: 30%;
+}
+
+#btn{
+    margin-bottom: 3%;
+    margin-left: 29%;
+    height: 17%;
+    width: 30%;
+    color: white;
+    background-color:blue;
+    font-size: 100%;
+}
+
+#result{
+    height: 34%;
+    width: 100%;
+}
+
+.com{
+    margin-left: 29%;
+    margin-top: 3%;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:darkgreen;
+}
+
+#lowOrHi{
+    color: blue;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top:2%;
+    margin-left: 25%;
+}
+
+#newgame{
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+    margin-left: 35%;
+}
