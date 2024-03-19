@@ -7,60 +7,59 @@
 html,body{
     width: 100%;
     height: 100%;
-    background-color:pink;
+    background-color:rgb(243, 181, 181);
 }
 
 #main{
-    height: 95%;
-    width: 60%;
+    height: 80%;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    box-shadow: 2px 2px 23px 20px rgb(238, 144, 160);
+    box-shadow: 2px 2px 23px 20px gray;
     border-radius: 10%;
 }
-
 h2{
     font-size: 40px;
-    margin-left: 20%;
+    text-align: center;
     margin-top: 3%;
     color:blue;
     margin-bottom: 3%;
 }
 
+
 #header{
     font-size: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:rgb(223, 20, 9);
-    margin-left: 15%;
+    text-align: center;
 }
 
 #input{
+    position: relative;
     height: 30%;
     width: 100%;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #label{
     font-size: 35px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 29%;
 }
 
 #inputfield{
     margin-top: 3%;
-    margin-bottom: 3%;
-    margin-left: 29%;
+    margin-bottom: 2%;
     height: 15%;
     width: 30%;
 }
 
 #btn{
-    margin-bottom: 3%;
-    margin-left: 29%;
+    margin-bottom: 1%;
     height: 17%;
     width: 30%;
     color: white;
@@ -74,11 +73,10 @@ h2{
 }
 
 .com{
-    margin-left: 29%;
-    margin-top: 3%;
+    text-align: center;
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color:darkgreen;
+    color: green;
 }
 
 #lowOrHi{
@@ -86,12 +84,77 @@ h2{
     font-size: 30px;
     font-weight: 900;
     margin-top:2%;
-    margin-left: 25%;
+    margin-left: 5%;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 #newgame{
     font-size: 20px;
     font-weight: 900;
     color: red;
-    margin-left: 35%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+    #main {
+        width: 90%; /* Make container width 100% for smaller screens */
+        height: auto;
+    }
+    h2{
+        font-size:23px;
+        margin-top: 3%;
+        color:blue;
+        margin-bottom: 4%;
+    }
+    #header{
+        font-size: 15px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:rgb(223, 20, 9);
+        text-align: left;
+        margin-left: 3%;
+    }
+
+    #lowOrHi{
+       font-size: 15px;
+    }
+    #label{
+        font-size: 20px;
+    }
+
+    
+  #inputfield{
+    height: 20%;
+    width: 60%;
+}
+
+#btn{
+    height: 20%;
+    width: 60%;
+}
+   
+    #input{
+        position: relative;
+        height: 40%;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #main {
+        width: 90%; /* Make container width 100% for smaller screens */
+        height: auto;
+    }
+    #btn{
+        height: 25%;
+        width: 40%;
+    }
+    #inputfield{
+        height: 25%;
+        width: 40%;
+    }
 }
